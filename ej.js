@@ -2,10 +2,9 @@ const formulario = document.getElementById("formulario");
 const resultado = document.getElementById("resultado");
 
 formulario.addEventListener("submit", function(event) {
-  event.preventDefault(); // evita recargar la página
-
+  event.preventDefault(); 
   const numero = parseInt(document.getElementById("numero").value);
-  resultado.innerHTML = ""; // limpiar resultados previos
+  resultado.innerHTML = ""; 
 
   if (numero < 1 || numero > 10 || isNaN(numero)) {
     resultado.innerHTML = "<p class='error'>El número debe estar entre 1 y 10.</p>";
